@@ -1,0 +1,50 @@
+.about-section {
+  line-height: 22px;
+  font-weight: 400;
+  color: #555555;
+  padding: 48px 0 60px 0;
+
+  @media (min-width: 992px) {
+    padding: 176px 0 173px 0;
+  }
+
+  &__container {
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__column {
+    width: 100%;
+    position: relative;
+
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+
+    &:first-child {
+      @media (min-width: 992px) {
+        padding: 0 114px 0 0;
+      }
+    }
+  }
+
+  &__text {
+    p {
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 400;
+      color: #555555;
+      margin: 0 0 50px 0;
+
+      @media (min-width: 992px) {
+        margin: 0 0 85px 0;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0 0 11px 0;
+  }
+}

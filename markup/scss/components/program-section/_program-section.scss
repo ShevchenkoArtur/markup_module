@@ -1,0 +1,24 @@
+.program-section {
+  &__title {
+    text-align: center;
+    margin: 40px 0 0 0;
+
+    @media (min-width: 768px) {
+      margin: 113px 0 0 0;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-family: $second-font-style;
+    font-size: 41px;
+    line-height: 61px;
+    font-weight: 400;
+    color: #777777;
+    margin: 0 0 20px 0;
+
+    @media (min-width: 768px) {
+      margin: 0 0 56px 0;
+    }
+  }
+}

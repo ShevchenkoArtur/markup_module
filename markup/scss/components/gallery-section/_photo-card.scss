@@ -1,0 +1,56 @@
+.photo-card {
+  flex-basis: 50%;
+  position: relative;
+
+  @media (min-width: 768px) {
+    flex-basis: 25%;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__icon {
+    @extend %flex-center;
+    @extend %absolute-center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 6px 6px 9px 0px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: $animation-speed;
+  }
+
+  .icon-search {
+    font-size: 20px;
+    color: #5b6ceb;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #5b6ceb;
+    opacity: 0;
+    transition: $animation-speed;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    &:before {
+      opacity: .8;
+    }
+
+    .photo-card__icon {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

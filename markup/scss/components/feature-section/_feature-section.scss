@@ -1,0 +1,28 @@
+.feature-section {
+  background: no-repeat url("../images/bg-02.jpg") center / cover $form-section-bg;
+  position: relative;
+  padding: 40px 0;
+
+  @media (min-width: 768px) {
+    padding: 125px 0 136px 0;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $form-section-bg;
+  }
+
+  &:before {
+    mix-blend-mode: color;
+  }
+
+  &:after {
+    opacity: .8;
+  }
+}

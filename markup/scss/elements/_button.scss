@@ -1,0 +1,12 @@
+.button {
+  background-color: $button-bg;
+  color: $button-color;
+  border: $button-border;
+  cursor: pointer;
+
+
+  &:hover {
+    box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.15);
+    background-color: #3e4dbf;
+  }
+}
